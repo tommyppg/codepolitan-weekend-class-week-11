@@ -4,7 +4,7 @@
 	<?php $this->load->view('partials/head'); ?>
 </head>
 <body>
-	<div>
+	<div class="container">
 		<h2><?php echo $artikel_data['judul_artikel']; ?></h2>
 		<p><?php echo $artikel_data['tanggal_artikel']; ?></p>
 
