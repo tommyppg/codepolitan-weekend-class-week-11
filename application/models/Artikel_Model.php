@@ -4,6 +4,14 @@ class Artikel_Model extends CI_Model{
 	//define nama tabel
 	private $table = 'artikel';
 
+	function count_all(){
+		return $this->db->get($this->table)->num_rows();
+	}
+
+	function get_paginated_data($number, $offset){
+		return $query = $this->db->get($this->table, $number, $offset);		
+	}
+
 	function get_all(){
 		return $this->db->get($this->table);
 	}

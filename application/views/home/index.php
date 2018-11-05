@@ -33,6 +33,8 @@
 				}
 			?>
 		</div>
+
+		<?php echo $this->pagination->create_links(); ?>
 	</div>
 
 	<?php $this->load->view('partials/foot'); ?>
